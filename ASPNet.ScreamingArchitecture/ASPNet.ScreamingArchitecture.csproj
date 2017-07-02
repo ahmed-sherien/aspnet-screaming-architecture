@@ -96,22 +96,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Home\Controllers\HomeController.cs" />
+    <Compile Include="Infrastructure\CustomRazorViewEngine.cs" />
+    <Compile Include="Products\Controllers\ProductsController.cs" />
+    <Compile Include="Products\Models\Product.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Views\web.config" />
     <Content Include="packages.config" />
+    <Content Include="Shared\Views\_Layout.cshtml" />
+    <Content Include="Shared\Views\Error.cshtml" />
+    <Content Include="Products\Views\Index.cshtml" />
+    <Content Include="Products\Views\Details.cshtml" />
+    <Content Include="Home\Views\Index.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
     <None Include="Web.Release.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
+    <Content Include="_ViewStart.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Controllers\" />
-    <Folder Include="Models\" />
+    <Folder Include="Contact\Controllers\" />
+    <Folder Include="Contact\Models\" />
+    <Folder Include="Contact\Views\Products\" />
+    <Folder Include="Home\Models\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
